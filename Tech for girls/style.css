@@ -1,0 +1,94 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.container {
+  max-width: 480px;
+  background: white;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(100, 100, 120, 0.15);
+}
+h1 {
+  text-align: center;
+  color: #5b4b8a;
+  margin-bottom: 30px;
+}
+.form-section {
+  margin-bottom: 25px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #5b4b8a;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1.5px solid #a8a3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus,
+input[type="file"]:focus {
+  outline: none;
+  border-color: #5b4b8a;
+  box-shadow: 0 0 5px #8c82d7;
+}
+button {
+  background: #7a68d1;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+button:hover:not(:disabled) {
+  background: #5b4b8a;
+}
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+#shareCount {
+  font-weight: 600;
+  color: #4a3e6d;
+  margin-top: 8px;
+}
+#shareMessage {
+  margin-top: 8px;
+  font-weight: 700;
+  color: #1d7a1d;
+}
+.hidden {
+  display: none;
+}
+#submissionMessage {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #1d7a1d;
+  font-weight: 700;
+}

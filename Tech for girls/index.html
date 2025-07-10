@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech For Girls Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Tech For Girls Registration</h1>
+
+    <form id="registrationForm">
+      <section class="form-section">
+        <h2>Basic Details</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit number" />
+
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="college">College / Department</label>
+        <select id="college" name="college" required>
+          <option value="" disabled selected>Select your college/department</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Business">Business</option>
+          <option value="Other">Other</option>
+        </select>
+      </section>
+
+      <section class="form-section whatsapp-share">
+        <h2>Share on WhatsApp</h2>
+        <button type="button" id="whatsappBtn">Share on WhatsApp</button>
+        <p id="shareCount">Click count: 0/5</p>
+        <p id="shareMessage" class="hidden">Sharing complete. Please continue.</p>
+      </section>
+
+      <section class="form-section">
+        <h2>Upload Screenshot</h2>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*,.pdf" required />
+      </section>
+
+      <button type="submit" id="submitBtn" disabled>Submit Registration</button>
+    </form>
+
+    <p id="submissionMessage" class="hidden"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
